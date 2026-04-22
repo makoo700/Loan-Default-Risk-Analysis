@@ -48,13 +48,14 @@ This analysis investigates why ~25% of loans default well above the target of 12
 
 ## 📊 Key Findings
 
-> _Summarized from the analysis below — see full charts and code in [Colab Notebook](#)_
+> _Summarized from the analysis below — see full charts and code in [https://colab.research.google.com/drive/1zqFupft24SE5mVFtlejg7gGT_vJrc_Gk](#)_
 
 1. **Overall Default Rate**: 25.3% - **well above the 12% target**
 2. **Highest Default Rate**:
    - **Credit Score Bucket**: `520–599` (Poor) - 42.1% default rate
    - **DTI Bucket**: `50%+` - 38.7% default rate
-   - **Employment Status**: `Self-Employed` - 40.5% default rate
+   - **Employment Status**: `Self-Employed` - 40.5% default rate<img width="989" height="590" alt="default by credit score" src="https://github.com/user-attachments/assets/205d1665-d42d-42a6-bf3a-2468f9a03513" />
+
    - **Loan Purpose**: `Vacation` - 38.2% default rate
 3. **Critical Thresholds**:
    - **Minimum Credit Score**: 650 (Average) or higher
@@ -71,24 +72,32 @@ This analysis investigates why ~25% of loans default well above the target of 12
 - **Poor credit** (520–599): 42.1% default rate
 - **Excellent credit** (750+): 8.1% default rate
 - **Recommendation**: Set minimum credit score to **650** or higher
+  <img width="989" height="590" alt="default by credit score" src="https://github.com/user-attachments/assets/50848470-d938-4545-82ec-14247c7ff936" />
+
 
 ### ✅ Question 2: Default Rate by DTI
 
 - **DTI > 40%**: 35.6% default rate
 - **DTI ≤ 40%**: 10.2% default rate
 - **Recommendation**: Set **maximum DTI of 40%** for approval
+  <img width="989" height="590" alt="dti ratio vs default status" src="https://github.com/user-attachments/assets/1ab3d8df-292c-4a61-a009-4ac2ae78375b" />
+
 
 ### ✅ Question 3: Loan Purpose & Amount
 
 - **Highest Risk Purpose**: `Vacation` (38.2% default)
 - **Average Loan Amount**: $16,200 for defaults vs. $12,800 for non-defaults
 - **Recommendation**: Cap vacation loans at $10,000 or require co-signer
+  <img width="1189" height="690" alt="default by loan purpose" src="https://github.com/user-attachments/assets/89a8e52d-63c0-47d6-b874-1c34557110e3" />
+
 
 ### ✅ Question 4: Employment Status & Tenure
 
 - **< 2 years employed**: 33.7% default rate
 - **2+ years employed**: 11.3% default rate
 - **Recommendation**: Set **minimum 2 years of employment** as hard cutoff
+  <img width="989" height="590" alt="default by employment status" src="https://github.com/user-attachments/assets/54033788-3c32-4754-91b2-06495c948df6" />
+
 
 ---
 
@@ -101,20 +110,6 @@ This analysis investigates why ~25% of loans default well above the target of 12
 | **Employment Tenure** | ≥ 2 years                              | Borrowers with <2 years are 3x more likely to default     |
 | **Loan Purpose**      | Restrict: Vacation, Debt Consolidation | High default rates - consider higher pricing or co-signer |
 | **Loan Amount**       | ≤ $10,000 for high-risk purposes       | Larger loans = higher loss if default                     |
-
----
-
-## Visuals & Outputs
-
-All charts were generated and saved as PNG files:
-
-- `q1_default_rate_credit_score.png`
-- `q2_dti_scatter.png`
-- `q2_dti_trend.png`
-- `q3_loan_purpose_default_rate.png`
-- `q3_loan_amount_boxplot.png`
-- `q4_employment_status_default_rate.png`
-- `q4_years_employed_trend.png`
 
 ---
 
