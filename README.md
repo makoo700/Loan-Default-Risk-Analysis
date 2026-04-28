@@ -23,7 +23,7 @@ This analysis investigates why ~25% of loans default well above the target of 12
 
 ---
 
-## 📂 Dataset Summary
+## Dataset Summary
 
 **Input Files** (after cleaning and export):
 
@@ -46,7 +46,7 @@ This analysis investigates why ~25% of loans default well above the target of 12
 
 ---
 
-## 📊 Key Findings
+## Key Findings
 
 > _Summarized from the analysis below — see full charts and code in [https://colab.research.google.com/drive/1zqFupft24SE5mVFtlejg7gGT_vJrc_Gk](#)_
 
@@ -87,7 +87,7 @@ This analysis investigates why ~25% of loans default well above the target of 12
 
 - **Highest Risk Purpose**: `Vacation` (38.2% default)
 - **Average Loan Amount**: $16,200 for defaults vs. $12,800 for non-defaults
-- **Recommendation**: Cap vacation loans at $10,000 or require co-signer
+- **Recommendation**: Cap wedding loans at $10,000 or require co-signer
   <img width="1189" height="690" alt="default by loan purpose" src="https://github.com/user-attachments/assets/89a8e52d-63c0-47d6-b874-1c34557110e3" />
 
 
